@@ -1,32 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Home.module.less'
+import styles from './HomeFlex.module.less'
  
-class Home extends React.Component{
+class HomeFlex extends React.Component{
     render(){
         return(
             <div className={styles.pageroot}>
                 <div className={styles.left}>
-                    <Link to="/Page1/" style={{color:'black'}}>
-                        <div>点击跳转到Page1</div>
-                    </Link>
-                    <Link to="/Page2/" style={{color:'black'}}>
-                        <div>点击跳转到Page2</div>
-                    </Link>
-                    <Link to="/Page3/" style={{color:'black'}}>
-                        <div>点击跳转到Page3</div>
-                    </Link>
+                    <div>默认Flex圣杯布局</div>
                     <Link to="/shengbeiLayout/Grid" style={{color:'black'}}>
-                        <div>圣杯布局grid</div>
+                        <div>圣杯布局grid - 点击跳转</div>
                     </Link>
                     <Link to="/shengbeiLayout/Float" style={{color:'black'}}>
-                        <div>圣杯布局float</div>
+                        <div>圣杯布局float - 点击跳转</div>
                     </Link>
                     <Link to="/shengbeiLayout/Absolute" style={{color:'black'}}>
-                        <div>圣杯布局absolute</div>
+                        <div>圣杯布局absolute - 点击跳转</div>
                     </Link>
                     <Link to="/shengbeiLayout/Table" style={{color:'black'}}>
-                        <div>圣杯布局Table</div>
+                        <div>圣杯布局Table - 点击跳转</div>
+                    </Link>
+                    <Link to="/" style={{color:'black'}}>
+                        <div>返回首页 - 点击跳转</div>
                     </Link>
                 </div>
                 <div className={styles.middle}>This is Flex middle!</div>
@@ -36,4 +31,4 @@ class Home extends React.Component{
     }
 }
  
-export default Home;
+export default HomeFlex;
