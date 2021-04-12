@@ -24,36 +24,36 @@ import './App.css';
 import 'antd/dist/antd.css';
 
 function App() {
-  axios.get('https://gank.io/api/v2/banners')
-  .then(function (response) {
-    console.log(response);
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
-  return (
-    <Router >
-      <div className="App">
-        <Route path="/Antd/SiderLayout" component={SiderLayout} />  
-        <header className="App-header">
-          <span>
-            <Route exact path="/" component={Home} />
-            <Route path="/shengbeiLayout" component={HomeFlex} />
-            {/* <Route exact path="/" component={Homeexact} /> */}
-            <Route path="/Page1" component={Page1} />
-            <Route path="/Page2" component={Page2} />
-            <Route path="/shengbeiLayout/Grid" component={Grid} />
-            <Route path="/shengbeiLayout/Float" component={Float} />
-            <Route path="/shengbeiLayout/Absolute" component={Absolute} />
-            <Route path="/shengbeiLayout/Table" component={Table} />
-            <Route path="/center" component={HomeCenterFlex} />
-            <Route path="/center/JDinterview" component={JDinterview} />
-            {/* <DatePicker /> */}
-          </span>
-        </header>
-      </div>
-    </Router>
-  );
+    axios.get('https://gank.io/api/v2/banners')
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    return (
+        <Router >
+            <div className="App">
+                <Route path="/Antd/SiderLayout" component={SiderLayout} />  
+                <header className="App-header">
+                    <span>
+                        <Route exact path="/" component={Home} />
+                        <Route path="/shengbeiLayout" component={HomeFlex} />
+                        {/* <Route exact path="/" component={Homeexact} /> */}
+                        <Route path="/Page1" component={Page1} />
+                        <Route path="/Page2" component={Page2} />
+                        <Route path="/shengbeiLayout/Grid" component={Grid} />
+                        <Route path="/shengbeiLayout/Float" component={Float} />
+                        <Route path="/shengbeiLayout/Absolute" component={Absolute} />
+                        <Route path="/shengbeiLayout/Table" component={Table} />
+                        <Route path="/center" component={HomeCenterFlex} />
+                        <Route path="/center/JDinterview" component={JDinterview} />
+                        {/* <DatePicker /> */}
+                    </span>
+                </header>
+            </div>
+        </Router>
+    );
 }
 
 export default App;
