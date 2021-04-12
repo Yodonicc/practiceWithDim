@@ -15,6 +15,7 @@ import Float from './purecss/shengbeiLayout/Float.js';
 import Absolute from './purecss/shengbeiLayout/Absolute.js';
 import Table from './purecss/shengbeiLayout/Table.js';
 import HomeCenterFlex from './purecss/center/HomeFlex.js';
+import JDinterview from './purecss/center/JDinterview.js';
 // eslint-disable-next-line no-unused-vars
 import { DatePicker } from 'antd';
 import axios from 'axios'
@@ -36,7 +37,7 @@ function App() {
         <Route path="/Antd/SiderLayout" component={SiderLayout} />  
         <header className="App-header">
           <span>
-            <Route path="/" component={Home} />
+            <Route exact path="/" component={Home} />
             <Route path="/shengbeiLayout" component={HomeFlex} />
             {/* <Route exact path="/" component={Homeexact} /> */}
             <Route path="/Page1" component={Page1} />
@@ -46,6 +47,7 @@ function App() {
             <Route path="/shengbeiLayout/Absolute" component={Absolute} />
             <Route path="/shengbeiLayout/Table" component={Table} />
             <Route path="/center" component={HomeCenterFlex} />
+            <Route path="/center/JDinterview" component={JDinterview} />
             {/* <DatePicker /> */}
           </span>
         </header>

@@ -7,12 +7,12 @@ class HomeFlex extends React.Component{
         return(
             <div className={styles.pageroot}>
                 <div className={styles.left}>
-                    <div>默认Flex布局</div>
-                    <Link to="/shengbeiLayout/Grid" style={{color:'black'}}>
-                        <div>圣杯布局grid - 点击跳转</div>
+                    <div>默认Flex居中</div>
+                    <Link to="/center/JDinterview" style={{color:'black'}}>
+                        <div>京东CSS面试题 - 左上右下 - 点击跳转</div>
                     </Link>
                     <Link to="/shengbeiLayout/Float" style={{color:'black'}}>
-                        <div>圣杯布局float - 点击跳转</div>
+                        <div>absolute + 负margin - 点击跳转</div>
                     </Link>
                     <Link to="/shengbeiLayout/Absolute" style={{color:'black'}}>
                         <div>圣杯布局absolute - 点击跳转</div>
