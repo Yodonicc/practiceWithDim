@@ -16,9 +16,21 @@ class Home extends React.Component{
                     <Link to="/Page3/" style={{color:'black'}}>
                         <div>点击跳转到Page3</div>
                     </Link>
+                    <Link to="/shengbeiLayout/Grid" style={{color:'black'}}>
+                        <div>圣杯布局grid</div>
+                    </Link>
+                    <Link to="/shengbeiLayout/Float" style={{color:'black'}}>
+                        <div>圣杯布局float</div>
+                    </Link>
+                    <Link to="/shengbeiLayout/Absolute" style={{color:'black'}}>
+                        <div>圣杯布局absolute</div>
+                    </Link>
+                    <Link to="/shengbeiLayout/Table" style={{color:'black'}}>
+                        <div>圣杯布局Table</div>
+                    </Link>
                 </div>
-                <div className={styles.middle}>This is middle!</div>
-                <div className={styles.right}>This is right!</div>
+                <div className={styles.middle}>This is Flex middle!</div>
+                <div className={styles.right}>This is Flex right!</div>
             </div>
         );
     }

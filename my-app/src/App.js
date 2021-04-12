@@ -9,6 +9,11 @@ import Homeexact from './Homeexact';
 import Page1 from './Page1.js';
 import Page2 from './Page2.js';
 import SiderLayout from './antd/SiderLayout.js';
+import Grid from './purecss/shengbeiLayout/Grid.js';
+import Float from './purecss/shengbeiLayout/Float.js';
+import Absolute from './purecss/shengbeiLayout/Absolute.js';
+import Table from './purecss/shengbeiLayout/Table.js';
+// eslint-disable-next-line no-unused-vars
 import { DatePicker } from 'antd';
 import axios from 'axios'
 //import createSagaMiddleware from 'redux-saga'
@@ -33,16 +38,11 @@ function App() {
             <Route exact path="/" component={Homeexact} />
             <Route path="/Page1" component={Page1} />
             <Route path="/Page2" component={Page2} />
-            
-            <DatePicker />
-            <a
-              className="App-link"
-              href="https://reactjs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              子页面2
-            </a>
+            <Route path="/shengbeiLayout/Grid" component={Grid} />
+            <Route path="/shengbeiLayout/Float" component={Float} />
+            <Route path="/shengbeiLayout/Absolute" component={Absolute} />
+            <Route path="/shengbeiLayout/Table" component={Table} />
+            {/* <DatePicker /> */}
           </span>
         </header>
       </div>
