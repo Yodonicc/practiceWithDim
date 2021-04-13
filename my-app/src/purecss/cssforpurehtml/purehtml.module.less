@@ -20,7 +20,7 @@
     width: 100%;
 }
 //注释: 这一行被注释掉了！;
-//a:我也不知道为什么，只有紧挨着双斜杠不空格地写注释，而且要有‘a：b；’这种属性声明格式才可以;
+//a:我也不知道为什么，只有紧挨着双斜杠不空格地写注释，而且要有‘a：b；’这种属性声明格式才可以，不然postcss编译报错;
 .checkbox:checked + span { 
     background-color: dodgerblue;
 }
@@ -33,3 +33,30 @@
 .code { 
     display: none; 
 }
+
+.mytransition{
+    transition: all 2s ease-out;    
+    //transition: margin 0.5s ease-out;
+}
+
+.mytransition:hover{
+    background-color: dodgerblue;
+    font-size: large;
+}
+
+
+@keyframes mykeyframename{
+    from { 
+        margin-left: -50%; 
+    } 
+    to { 
+        margin-left: 50%; 
+    }
+}
+
+.myanimation{
+    animation: mykeyframename 4s linear 1s infinite alternate;
+}
+
+
+

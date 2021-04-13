@@ -18,9 +18,9 @@ class Purehtml extends React.Component{
                     <span className={styles.myspan}>我是bike复选框，点我！</span>
                     <div className={styles.code}>我是bike控制的文本！</div>
                 </div>
-                <div onClick={this.bikeHandler}>
-                    <input onClick={this.bikeHandler} type="checkbox" name="vehicle" value="Car"></input>
-                    <span onClick={this.bikeHandler}>I have a Car</span>
+                <div>
+                    <input type="checkbox" name="vehicle" value="Car"></input>
+                    <span>I have a Car</span>
                 </div>
                 <div>
                     <input type="checkbox" name="vehicle" value="Bus"></input>
@@ -33,7 +33,8 @@ class Purehtml extends React.Component{
                 <select></select>
                 <div className={styles.code} id="biketext2">我是bike控制的文本！</div>
                 <div>我是car控制的文本！</div>
-                <div>我是bus控制的文本！</div>
+                <div className={styles.mytransition}>鼠标移过来，我有过渡效果！</div>
+                <div className={styles.myanimation}>我是一行动画效果！</div>
             </div>
         );
     }
