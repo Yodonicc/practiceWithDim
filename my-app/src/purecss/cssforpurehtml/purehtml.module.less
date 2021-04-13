@@ -1,0 +1,30 @@
+.pageroot{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox{
+    //position: absolute;
+    //margin-left: 200px;
+    color: darkred;
+    background-color: darkturquoise;
+    z-index: 10;
+    width: 300px;
+    opacity: 0;
+}
+
+.myspan{
+    //background-color: dodgerblue;
+    margin-left: -300px;
+    z-index: 1;
+    width: 100%;
+}
+
+.checkbox:checked + span { 
+    background-color: dodgerblue;
+}
+
+.checkbox:checked ~ .code { 
+    background-color: dodgerblue;
+    display: block; 
+}

@@ -23,6 +23,9 @@ class Home extends React.Component {
                     <Link to="/center" style={{ color: 'black' }}>
                         <div>水平垂直居中 - 点击跳转</div>
                     </Link>
+                    <Link to="/purehtml" style={{ color: 'black' }}>
+                        <div>纯HTML的CSS封装 - 点击跳转</div>
+                    </Link>
                 </div>
             </div>
         );
