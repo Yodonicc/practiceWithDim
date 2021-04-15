@@ -17,6 +17,7 @@ import Table from './purecss/shengbeiLayout/Table.js';
 import HomeCenterFlex from './purecss/center/HomeFlex.js';
 import JDinterview from './purecss/center/JDinterview.js';
 import Purehtml from './purecss/cssforpurehtml/purehtml.js';
+import ReactLearn from './react/ReactLearn.js';
 // eslint-disable-next-line no-unused-vars
 import { DatePicker } from 'antd';
 import axios from 'axios'
@@ -50,6 +51,7 @@ function App() {
                         <Route path="/center" component={HomeCenterFlex} />
                         <Route path="/center/JDinterview" component={JDinterview} />
                         <Route path="/purehtml" component={Purehtml} />
+                        <Route path="/react" component={ReactLearn} />
                         {/* <DatePicker /> */}
                     </span>
                 </header>

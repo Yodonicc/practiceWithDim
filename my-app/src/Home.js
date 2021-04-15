@@ -26,6 +26,9 @@ class Home extends React.Component {
                     <Link to="/purehtml" style={{ color: 'black' }}>
                         <div>纯HTML的CSS封装 - 点击跳转</div>
                     </Link>
+                    <Link to="/react" style={{ color: 'black' }}>
+                        <div>React各种特性 - 点击跳转</div>
+                    </Link>
                 </div>
             </div>
         );
