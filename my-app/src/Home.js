@@ -11,6 +11,9 @@ class Home extends React.Component {
                     <Link to="/ReactPlay/" style={{ color: 'purple' }}>
                         <div>点击跳转到React Playground!</div>
                     </Link>
+                    <Link to="/ReactTicTacToe/" style={{ color: 'black' }}>
+                        <div>点击跳转到React 井字棋!</div>
+                    </Link>
                     <Link to="/Page1/" style={{ color: 'black' }}>
                         <div>点击跳转到Page1</div>
                     </Link>
