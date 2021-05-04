@@ -20,6 +20,7 @@ import Purehtml from './purecss/cssforpurehtml/purehtml.js';
 import ReactLearn from './react/ReactLearn.js';
 import ReactPlay from './react/ReactPlay.js';
 import ReactTicTacToe from './react/ReactTicTacToe.js';
+import ReduxSingleCounter from './react/redux/ReduxSingleCounter.js';
 // eslint-disable-next-line no-unused-vars
 import { DatePicker } from 'antd';
 import axios from 'axios'
@@ -56,6 +57,7 @@ function App() {
                         <Route path="/react" component={ReactLearn} />
                         <Route exact path="/ReactPlay" component={ReactPlay} />
                         <Route path="/ReactTicTacToe" component={ReactTicTacToe} />
+                        <Route path="/Redux/SingleCounter" component={ReduxSingleCounter} />
                         {/* <DatePicker /> */}
                     </span>
                 </header>
