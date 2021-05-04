@@ -1,9 +1,10 @@
 import React from 'react';
 import { createStore } from 'redux';
 
+//这个示例还没解决的问题：点击UI组件按钮没有dispatch事件
+//怀疑是react,redux语法问题，先做下一个示例看能不能解决
 
-
-const counter = (state = 0, action) => {
+const counter = (state = 2, action) => {
     switch(action.type){
     case 'INCREMENT':
         return state + 1;
@@ -15,25 +16,44 @@ const counter = (state = 0, action) => {
 }
 
 // const { createStore } = Redux;
+const store = createStore(counter)
 
+store.subscribe(ReduxSingleCounter)
 
-class ReduxSingleCounter extends React.Component{
-    render(){
-        const store = createStore(counter)
+function ReduxSingleCounter(props){
+    return (
+        <div>
+            <Counter 
+                value={store.getState()}
+                onIncrement={() => 
+                    store.dispatch({
+                        type: 'INCREMENT'
+                    })
+                }
+                onDecrement={() => 
+                    store.dispatch({
+                        type: 'DECREMENT'
+                    })
+                }
+            />
 
-        const render = () => {
-            document.body.innerText = store.getState()
-        }
+        </div>)
+}
 
-        store.subscribe(render)
-        render()
-
-        document.addEventListener('click', () => {
-            store.dispatch({ type: 'INCREMENT' })
-        })
-        return null
-        // return <div>我是 ReduxSingleCounter</div>
-    }
+//注意这里传入值没有写props,里面也没引用props.xxx，是因为传入时候直接对props用解构赋值了
+//dump component，UI组件
+const Counter = ({
+    value,
+    onIncrement,
+    onDecrement
+}) => {
+    return (
+        <div>
+            <h1>{value}</h1>
+            <button onClick={onIncrement}>+</button>
+            <button onClick={onDecrement}>-</button>
+        </div>
+    )
 }
 
 export default ReduxSingleCounter
