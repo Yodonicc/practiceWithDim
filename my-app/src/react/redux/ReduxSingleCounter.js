@@ -16,11 +16,19 @@ const counter = (state = 2, action) => {
 }
 
 // const { createStore } = Redux;
-const store = createStore(counter)
+// const store = createStore(counter)
 
-store.subscribe(ReduxSingleCounter)
+// store.subscribe(ReduxSingleCounter)
+
+function listener(props){
+    
+}
 
 function ReduxSingleCounter(props){
+    const store = createStore(counter)
+
+    store.subscribe(ReduxSingleCounter)
+
     return (
         <div>
             <Counter 
