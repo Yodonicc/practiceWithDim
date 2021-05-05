@@ -17,6 +17,9 @@ class Home extends React.Component {
                     <Link to="/Redux/SingleCounter/" style={{ color: 'black' }}>
                         <div>点击跳转到Redux SingleCounter!</div>
                     </Link>
+                    <Link to="/Redux/BasicToDo/" style={{ color: 'black' }}>
+                        <div>点击跳转到Redux BasicToDo!</div>
+                    </Link>
                     <Link to="/Page1/" style={{ color: 'black' }}>
                         <div>点击跳转到Page1</div>
                     </Link>
