@@ -17,7 +17,7 @@ class ReactContext extends React.Component{
         return (
             <div>
                 <h1>ReactContext</h1>
-                <MyContext.Provider value='理论上这句话应该能直接传进来'>
+                <MyContext.Provider value='理论上这句话应该能从Provider传进来'>
                     <Child1 />
                 </MyContext.Provider>
             </div>
@@ -41,7 +41,7 @@ function Target(props){
     return (
         <div>
             <MyContext.Consumer>
-                {value => <h1>{value}</h1>}
+                {value => <h3>{value}</h3>}
             </MyContext.Consumer>
         </div>
     )
