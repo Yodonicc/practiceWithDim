@@ -14,6 +14,9 @@ class Home extends React.Component {
                     <Link to="/ReactTicTacToe/" style={{ color: 'black' }}>
                         <div>点击跳转到React 井字棋!</div>
                     </Link>
+                    <Link to="/ReactContext/" style={{ color: 'black' }}>
+                        <div>点击跳转到React Context练习页!</div>
+                    </Link>
                     <Link to="/Redux/SingleCounter/" style={{ color: 'black' }}>
                         <div>点击跳转到Redux SingleCounter!</div>
                     </Link>

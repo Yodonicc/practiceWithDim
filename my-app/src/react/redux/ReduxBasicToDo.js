@@ -38,7 +38,7 @@ const todos = (state = [], action) => {
     }
 }
 
-const store = createStore(todoApp)
+// const store = createStore(todoApp)
 
 
 function ReduxBasicToDo(){
