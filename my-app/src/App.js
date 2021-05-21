@@ -23,6 +23,7 @@ import ReactTicTacToe from './react/ReactTicTacToe.js';
 import ReactContext from './react/ReactContext.js';
 import ReduxBasicToDo from './react/redux/ReduxBasicToDo.js';
 import ReduxSingleCounter from './react/redux/ReduxSingleCounter.js';
+import EChartsAndAxios from './eChartsAndAxios/EChartsAndAxios.js';
 // eslint-disable-next-line no-unused-vars
 import { DatePicker } from 'antd';
 import axios from 'axios'
@@ -62,6 +63,7 @@ function App() {
                         <Route path="/ReactContext" component={ReactContext} />
                         <Route path="/Redux/SingleCounter" component={ReduxSingleCounter} />
                         <Route path="/Redux/BasicToDo" component={ReduxBasicToDo} />
+                        <Route path="/EChartsAndAxios" component={EChartsAndAxios} />
                         {/* <DatePicker /> */}
                     </span>
                 </header>

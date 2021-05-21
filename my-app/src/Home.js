@@ -44,6 +44,12 @@ class Home extends React.Component {
                     <Link to="/react" style={{ color: 'black' }}>
                         <div>React各种特性 - 点击跳转</div>
                     </Link>
+                    <Link to="/react" style={{ color: 'black' }}>
+                        <div>React各种特性 - 点击跳转</div>
+                    </Link>
+                    <Link to="/EChartsAndAxios" style={{ color: 'black' }}>
+                        <div>ECharts表格和Axios数据 - 点击跳转</div>
+                    </Link>
                 </div>
             </div>
         );
